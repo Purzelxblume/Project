@@ -36,7 +36,7 @@ if ( isset($_POST['username']) )
         $_SESSION['id'] = $user->id;
         $_SESSION['username'] = $user->username;
         $_SESSION['rights'] = $user->rights;
-        $_SESSION['user_type'] = $user->type;
+  
         
         if ($_SESSION['user_type'] == 'fotographer') {
           header('Location: fotographer/index.php');
@@ -81,7 +81,7 @@ if ( isset($_POST['username']) )
         echo $feedback;
       }
       ?>
-      <form action="login.php" class="form-inline" method="post">
+      <form action="index.php" class="form-inline" method="post">
         <div class="form-group">
           <label class="sr-only" for="username">Username</label>
           <input type="text" class="form-control" name="username" id="username" placeholder="Username">
