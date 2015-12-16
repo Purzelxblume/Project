@@ -4,7 +4,6 @@ require_once('functions.php');
 
 class DBManager {
 
-	public errorFeedback = NULL;
 	public conn;
 
 	function __construct () {
