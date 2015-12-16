@@ -1,7 +1,6 @@
 <?php
 require_once('includes/db-connect.php');
 require_once('includes/functions.php');
-require_once('../prettyprint/index.php');
 
 if (!isset($_SESSION['username'])) {
   export($_SESSION);
