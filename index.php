@@ -3,7 +3,7 @@ require_once('includes/db-connect.php');
 require_once('includes/functions.php');
 
 
-if ( hasRights() == 100) {
+if ( getRights() == 100) {
   header('Location: fotographer/index.php');
 } elseif ( hasRights() == 101 ) {
   header('Location: customer/index.php');
