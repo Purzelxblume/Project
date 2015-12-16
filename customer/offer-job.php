@@ -19,7 +19,10 @@ require_once('../includes/functions.php');
       <?php require_once('../includes/include.nav.php'); ?>
       <hr>
 
-      <?php require_once('fotographer-list.php'); ?>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+      </div>
       
       <?php
       if ( isset($feedback) )
