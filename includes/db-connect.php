@@ -3,7 +3,7 @@
 session_start();
 
 try {
-$conn = new PDO('mysql:host=localhost;dbname=littleBlog', 'root', 'rootroot', array(
+$conn = new PDO('mysql:host=localhost;dbname=sanja_stovl', 'sanja', 'password', array(
 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
 PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
 ));
