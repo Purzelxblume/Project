@@ -1,6 +1,5 @@
 <nav id="site-nav">
   <ul class="nav nav-pills">
-	<li role="presentation"><a href="index.php">Home</a></li>
     <?php
 
     if ( hasRights(100) )
