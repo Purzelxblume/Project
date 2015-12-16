@@ -5,7 +5,7 @@ require_once('functions.php');
 class DBManager {
 
 	public $conn;
-
+	
 	function __construct () {
 		try {
 			$conn = new PDO('mysql:host=localhost;dbname=sanja_stovl', 'sanja', 'password', array(
@@ -31,7 +31,7 @@ class DBManager {
 
 		try {
 
-  			$statement = $conn->prepare("UPDATE jobs SET job_state='accepted' WHERE (job_id = :job_id) AND (job_fotographer_id = :user_id)");
+  			$statement = $this->conn->prepare("UPDATE jobs SET job_state='accepted' WHERE (job_id = :job_id) AND (job_fotographer_id = :user_id)");
   			$statement->execute(array(
     			':user_id' => $user_id,
     			':job_id' => $job_id
