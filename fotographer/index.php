@@ -23,10 +23,14 @@ require_once('../includes/functions.php');
 <?php
       if ( isset($feedback) )
       {
+        $dbMgr = new DBManager();
+        $feedback = getFeedback($dbMgr, 'info');
         echo $feedback;
       }
+      exit;
 
  /* $result = mysql_query("SELECT * FROM articles WHERE id = $id"); */
+
 $dbMgr = new DBManager();
 
 try {
