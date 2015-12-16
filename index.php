@@ -37,12 +37,7 @@ if ( isset($_POST['username']) )
         $_SESSION['username'] = $user->username;
         $_SESSION['rights'] = $user->rights;
   
-        
-        if ($_SESSION['user_type'] == 'fotographer') {
-          header('Location: /stov/fotographer/index.php');
-        } elseif ($_SESSION['user_type'] == 'customer') {
-          header('Location: /stov/customer/index.php');
-        }
+        header('Location: index.php');
         exit;
       }
       else
