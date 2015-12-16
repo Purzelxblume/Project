@@ -3,6 +3,10 @@
 require_once('includes/db-connect.php');
 require_once('includes/functions.php');
 
+if (!isset($_Session['username'])) {
+  header('Location: login.php');
+}
+
 ?><!DOCTYPE html>
 
 <html lang="en">
