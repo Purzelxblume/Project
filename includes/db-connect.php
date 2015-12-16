@@ -4,7 +4,7 @@ require_once('functions.php');
 
 class DBManager {
 
-	public conn;
+	public $conn;
 
 	function __construct () {
 		try {
