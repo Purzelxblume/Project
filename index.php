@@ -5,7 +5,7 @@ require_once('includes/functions.php');
 
 if ( getRights() == 100) {
   header('Location: fotographer/index.php');
-} elseif ( hasRights() == 101 ) {
+} elseif ( getRights() == 101 ) {
   header('Location: customer/index.php');
 }
 
