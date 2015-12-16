@@ -55,7 +55,7 @@ require_once('../includes/functions.php');
     } catch(PDOException $e) {
       $feedback = getFeedback($e->getMessage(),'danger');
     }
-
+    ?>
 
     </div>
   </body>
