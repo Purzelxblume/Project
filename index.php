@@ -33,7 +33,7 @@ if ( isset($_POST['username']) )
       if ( $user->password === $password )
       {
         # Logge den User ein
-        $_SESSION['id'] = $user->id;
+        $_SESSION['user_id'] = $user->id;
         $_SESSION['username'] = $user->username;
         $_SESSION['rights'] = $user->rights;
   
