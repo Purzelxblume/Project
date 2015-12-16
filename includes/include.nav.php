@@ -16,13 +16,6 @@
     	<li role="presentation"><a href="/stov/logout.php">Log out</a></li>
 		<?php
     }
-    else
-    {
     	?>
-    	<li role="presentation"><a href="login.php">Login</a></li>
-    	<?php
-    }
-
-    ?>
   </ul>
 </nav>
