@@ -7,7 +7,8 @@ $statement = $conn->prepare("SELECT * FROM jobs WHERE job_fotographer_id = $_SES
 $statement->execute(array(
 ':id' => $id
   ));
- while ( $job = $statement->fetch(PDO::FETCH_OBJ) ) {
+ while ( $job = $statement->fetch(PDO::FETCH_OBJ) ) { 
+ ?>
    <article>
           <header>
             <h3><?= $job->job_title; ?></h3>
@@ -21,6 +22,8 @@ $statement->execute(array(
           <footer>
             <a href="<?= "index.php" ?>" class="btn btn-primary"></a>
           </footer>
-        </article> }
+        </article> 
+        <?php
+        }
 
 ?>
