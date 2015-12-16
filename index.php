@@ -21,8 +21,6 @@ if ( isset($_POST['username']) )
       $conn = connectDB();
     }
 
-    echo "CONN: ".$conn;
-
     $statement = $conn->prepare("SELECT * FROM users WHERE username = :username");
     $statement->execute(array(
       ':username' => $username
@@ -33,6 +31,7 @@ if ( isset($_POST['username']) )
     # Datenbank nach dem User befragen
     #$result = mysql_query("SELECT * FROM users WHERE username = '$username'");
     # Gibt es einen Datensatz zu diesem Usernamen?
+    echo $statement->rowCount();
     if ($statement->rowCount())
     {
       # Hole die Userdaten des Users
