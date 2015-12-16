@@ -1,5 +1,5 @@
 <?php
-fucntion connectDB() {
+function connectDB() {
 	try {
 		$conn = new PDO('mysql:host=localhost;dbname=sanja_stovl', 'sanja', 'password', array(
 			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
