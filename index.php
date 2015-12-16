@@ -11,7 +11,6 @@ if (!isset($_SESSION['username'])) {
     } elseif ($user_type == 'customer') {
       header('Location: customer/index.php');
     }
-    
   }
 }
 
