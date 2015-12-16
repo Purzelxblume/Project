@@ -18,9 +18,9 @@ if ( isset($_POST['username']) )
 
   { 
     if (!isset($conn)) {
-      connectDB();
+      $conn = connectDB();
     }
-    
+
     $statement = $conn->prepare("SELECT * FROM users WHERE username = :username");
     $statement->execute(array(
       ':username' => $username
