@@ -40,8 +40,8 @@ while ( $job = $jobsStatement->fetch(PDO::FETCH_OBJ) ) {
             </p>
           </div>
           <footer>
-            <a href="acceptJob.php?job_id=<?= $job->job_id?>&" class="btn btn-primary">Accept</a>
-            <a href="<?= "jobDetails.php" ?>" class="btn btn-info">Details</a>
+            <a href="accept-job.php?job_id=<?=$job->job_id?>&user_id=<?= $user_id?>" class="btn btn-primary">Accept</a>
+            <a href="job-details.php?job_id=<?=$job->job_id?>&user_id=<?= $user_id?>" class="btn btn-info">Details</a>
           </footer>
         </article> 
         <?php

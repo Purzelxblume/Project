@@ -18,8 +18,14 @@ require_once('../includes/functions.php');
       <?php require_once('../includes/include.nav.php'); ?>
       <hr>
 
-<?php require_once('joblist.php'); ?>
+      <?php require_once('joblist.php'); ?>
       
-    </div>
+      <?php
+      if ( isset($feedback) )
+      {
+        echo $feedback;
+      }
+      ?> 
+      </div>
   </body>
 </html>
