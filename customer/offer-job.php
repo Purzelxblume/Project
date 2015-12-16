@@ -19,11 +19,16 @@ require_once('../includes/functions.php');
       <?php require_once('../includes/include.nav.php'); ?>
       <hr>
 
+      <h5>STOV | Customer Area</h5>
+
       <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        <span class="input-group-addon" id="basic-addon1">Kalenderwoche</span>
+        <input type="text" class="form-control" placeholder="Bsp.: KW50" aria-describedby="basic-addon1">
       </div>
-      
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Kalenderwoche</span>
+        <input type="text" class="form-control" placeholder="Bsp.: KW50" aria-describedby="basic-addon1">
+      </div>
       <?php
       if ( isset($feedback) )
       {

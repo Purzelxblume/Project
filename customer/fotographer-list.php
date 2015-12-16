@@ -21,8 +21,7 @@ try {
 
 while ( $fotographer = $fotographStatement->fetch(PDO::FETCH_OBJ) ) { 
     ?>
-              <div class="well well-lg">
-
+      <div class="well">
         <article>
           <header>
             <h3><?= $fotographer->real_name; ?></h3>
