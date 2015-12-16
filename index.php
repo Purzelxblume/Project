@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require_once('includes/db-connect.php');
 require_once('includes/functions.php');
 
@@ -31,7 +33,6 @@ if ( isset($_POST['username']) )
     # Datenbank nach dem User befragen
     #$result = mysql_query("SELECT * FROM users WHERE username = '$username'");
     # Gibt es einen Datensatz zu diesem Usernamen?
-    echo $statement->rowCount();
     if ($statement->rowCount())
     {
       # Hole die Userdaten des Users
