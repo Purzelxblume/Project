@@ -17,6 +17,8 @@ require_once('../includes/functions.php');
       <h2>STOV | Fotographer Area</h2>
       <?php require_once('../includes/include.nav.php'); ?>
       <hr>
+
+<?php require_once('joblist.php'); ?>
       
     </div>
   </body>
