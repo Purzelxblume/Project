@@ -11,7 +11,7 @@ try {
   }
 
   $user_id = $_SESSION['user_id'];
-  $fotographStatement = $conn->prepare("SELECT * FROM user WHERE (rights = '100') AND (customer_id = :user_id)");
+  $fotographStatement = $conn->prepare("SELECT * FROM users WHERE (rights = '100') AND (customer_id = :user_id)");
 
   $fotographStatement->execute(array(
     ':user_id' => $user_id
