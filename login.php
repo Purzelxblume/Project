@@ -64,13 +64,13 @@ if ( isset($_POST['username']) )
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>littleBlog | Login</title>
+    <title>STOV | Login</title>
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div id="site-wrap">
-      <h2>Little Blog</h2>
+      <h2>STOV | Login</h2>
       <?php require_once('includes/include.nav.php'); ?>
       <hr>
       <h3>Login</h3>
