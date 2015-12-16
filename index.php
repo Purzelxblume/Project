@@ -21,6 +21,8 @@ if ( isset($_POST['username']) )
       $conn = connectDB();
     }
 
+    echo "CONN: ".$conn;
+
     $statement = $conn->prepare("SELECT * FROM users WHERE username = :username");
     $statement->execute(array(
       ':username' => $username
