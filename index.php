@@ -2,15 +2,11 @@
 require_once('includes/db-connect.php');
 require_once('includes/functions.php');
 
-if (!isset($_SESSION['username'])) {
-  extract($_SESSION);
-  if (isset($user_type)) {
-    if ($user_type == 'fotographer') {
-      header('Location: fotographer/index.php');
-    } elseif ($user_type == 'customer') {
-      header('Location: customer/index.php');
-    }
-  }
+
+if ( hasRights(100) ) {
+  header('Location: fotographer/index.php');
+} elseif ( hasRights(101) ) {
+  header('Location: customer/index.php');
 }
 
 # Wurde das Formular abgeschickt?
