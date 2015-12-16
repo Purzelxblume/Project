@@ -1,11 +1,15 @@
 <?php
-session_start();
 require_once('../includes/functions.php');
 require_once('../includes/db-connect.php');
 
  /* $result = mysql_query("SELECT * FROM articles WHERE id = $id"); */
 
 try {
+  
+  if (!isset($conn)) {
+    $conn = connectDB();
+  }
+
   $user_id = $_SESSION['user_id'];
   $jobsStatement = $conn->prepare("SELECT * FROM jobs WHERE job_fotographer_id = '$user_id'");
   $locationsStatement = $conn->prepare("SELECT * FROM locations WHERE loc_job_id = :job_id");
