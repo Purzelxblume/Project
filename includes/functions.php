@@ -16,20 +16,15 @@ function getFeedback ($feedback, $feedbackType)
 function hasRights ($rights=10)
 {
 
-if ( !isset($_SESSION['rights']) || $_SESSION['rights'] < $rights) 
+if ( isset($_SESSION['rights'])) 
 
 {
 
 
-return false;
+return $_SESSION['rights'];
 
 }
-else
-{
-	
-return true;
-
-}
+return NULL;
 }
 
 function isActivePage($currentPage, $expectPage) {
