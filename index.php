@@ -3,9 +3,9 @@ require_once('includes/db-connect.php');
 require_once('includes/functions.php');
 
 
-if ( hasRights(100) ) {
+if ( hasRights() == 100) {
   header('Location: fotographer/index.php');
-} elseif ( hasRights(101) ) {
+} elseif ( hasRights() == 101 ) {
   header('Location: customer/index.php');
 }
 
