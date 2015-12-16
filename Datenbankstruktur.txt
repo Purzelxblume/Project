@@ -1,0 +1,19 @@
+Datenbankname
+  `littleBlog`
+
+Tabelle
+  `articles`
+  id INT AUTO_INCREMENT PRIMARY KEY
+  title VARCHAR(255)
+  teaser TEXT
+  content TEXT
+  postedOn INT
+  teaserImg VARCHAR(255)
+
+Tabelle
+  `users`
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100),
+  email VARCHAR(100),
+  password VARCHAR(255), 
+  rights INT

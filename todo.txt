@@ -1,0 +1,17 @@
+# Little Blog
+# index.php
+#   - Beiträge aufgezählt werden und ich einen anklicken kann
+# article.php
+#   - Beitrag selbst
+# login.php
+#   - Loginseite
+# admin.php
+#   - Einpflegen eines Artikels
+# logout.php
+#   - Logoutseite
+# edit.php
+#   - Bearbeiten eines Artikels
+# On top:
+# Kommentarsektion
+# Bildupload
+# Suche

@@ -1,0 +1,30 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#site-wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 100px;
+}
+
+.article-teaser p {
+  padding: 10px 0;
+}
+
+#log-in-form {
+  margin-top: 30px;
+}
+
+
+
+input[type='submit']{
+margin-top: 15px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
