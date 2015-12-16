@@ -15,7 +15,7 @@ require_once('../includes/functions.php');
   <body>
     <div id="site-wrap">
       <h2>STOV | Fotographer Area</h2>
-      <?php require_once('includes/include.nav.php'); ?>
+      <?php require_once('../includes/include.nav.php'); ?>
       <hr>
       
     </div>
