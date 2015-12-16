@@ -2,8 +2,6 @@
 require_once('../includes/functions.php');
 require_once('../includes/db-connect.php');
 
- /* $result = mysql_query("SELECT * FROM articles WHERE id = $id"); */
-
 try {
   
   if (!isset($conn)) {
@@ -23,7 +21,9 @@ try {
 
 while ( $fotographer = $fotographStatement->fetch(PDO::FETCH_OBJ) ) { 
     ?>
-   <article>
+              <div class="well well-lg">
+
+        <article>
           <header>
             <h3><?= $fotographer->real_name; ?></h3>
           </header>
@@ -33,6 +33,7 @@ while ( $fotographer = $fotographStatement->fetch(PDO::FETCH_OBJ) ) {
             <a href="offer-job.php?fotographer_id=<?= $fotographer->user_id?>" class="btn btn-default">Offer Job</a>
           </footer>
         </article> 
+      </div>
         <?php
         }
         ?>

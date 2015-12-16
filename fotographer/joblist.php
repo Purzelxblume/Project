@@ -33,6 +33,8 @@ while ( $job = $jobsStatement->fetch(PDO::FETCH_OBJ) ) {
     }
 
     ?>
+            <div class="well well-lg">
+
    <article>
           <header>
             <h3><?= $job->job_title; ?></h3>
@@ -48,6 +50,7 @@ while ( $job = $jobsStatement->fetch(PDO::FETCH_OBJ) ) {
             <a href="job-details.php?job_id=<?=$job->job_id?>&user_id=<?= $user_id?>" class="btn btn-info">Details</a>
           </footer>
         </article> 
+      </div>
         <?php
         }
         ?>
