@@ -15,7 +15,7 @@ try {
     ));
 
 } catch(PDOException $e) {
-  feedback = getFeedback($e->getMessage());
+  $feedback = getFeedback($e->getMessage(),'danger');
 }
 
 while ( $job = $jobsStatement->fetch(PDO::FETCH_OBJ) ) { 
@@ -25,7 +25,7 @@ while ( $job = $jobsStatement->fetch(PDO::FETCH_OBJ) ) {
         ));
     
     } catch(PDOException $e) {
-      $feedback = getFeedback($e->getMessage());
+      $feedback = getFeedback($e->getMessage(),'danger');
     }
 
     ?>
@@ -44,8 +44,4 @@ while ( $job = $jobsStatement->fetch(PDO::FETCH_OBJ) ) {
             <a href="<?= "index.php" ?>" class="btn btn-info">Details</a>
           </footer>
         </article> 
-        <?php
-  
- }
-
-?>
+        <?= } ?>

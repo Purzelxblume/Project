@@ -31,3 +31,7 @@ function isActivePage($currentPage, $expectPage) {
 
 	return ($currentPage === $expectPage) ? 'active' : '';
 }
+
+function getFotosID ($user_id) {
+
+}
