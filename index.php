@@ -15,7 +15,13 @@ if ( isset($_POST['username']) )
   extract($_POST); # $username, $password
   # Sind beide Felder ausgefüllt worden?
   if ( !empty($username) && !empty($password) )
-  { $statement = $conn->prepare("SELECT * FROM users WHERE username = :username");
+
+  { 
+    if (!isset($conn)) {
+      connectDB();
+    }
+    
+    $statement = $conn->prepare("SELECT * FROM users WHERE username = :username");
     $statement->execute(array(
       ':username' => $username
       ));

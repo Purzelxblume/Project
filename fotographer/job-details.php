@@ -18,8 +18,6 @@ require_once('../includes/functions.php');
       <?php require_once('../includes/include.nav.php'); ?>
       <hr>
       
-      <p> Locations </p>
-
     </div>
   </body>
 </html>
