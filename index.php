@@ -3,7 +3,7 @@ require_once('includes/db-connect.php');
 require_once('includes/functions.php');
 
 if (!isset($_SESSION['username'])) {
-  export($_SESSION);
+  extract($_SESSION);
   if (isset($user_type)) {
     if ($user_type == 'fotographer') {
       header('Location: fotographer/index.php');
