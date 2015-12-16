@@ -44,4 +44,6 @@ while ( $job = $jobsStatement->fetch(PDO::FETCH_OBJ) ) {
             <a href="<?= "index.php" ?>" class="btn btn-info">Details</a>
           </footer>
         </article> 
-        <?= } ?>
+        <?php
+        }
+        ?>
