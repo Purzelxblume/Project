@@ -40,7 +40,13 @@ if ( isset($_POST['username']) )
         $_SESSION['id'] = $user->id;
         $_SESSION['username'] = $user->username;
         $_SESSION['rights'] = $user->rights;
-        header('Location: admin.php');
+        $_SESSION['user_type'] = $user->type;
+        
+        if ($_SESSION['user_type'] == 'fotographer') {
+          header('Location: fotographer/index.php');
+        } elseif ($_SESSION['user_type'] == 'customer') {
+          header('Location: customer/index.php');
+        }
         exit;
       }
       else
