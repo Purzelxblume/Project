@@ -3,12 +3,11 @@ require_once('/stov/includes/functions.php');
 require_once('/stov/includes/db-connect.php');
 
  /* $result = mysql_query("SELECT * FROM articles WHERE id = $id"); */
-$statement = $conn->prepare("SELECT * FROM jobs WHERE job_fotographer_id = $_SESSION['user_id']");
+$statement = $conn->prepare("SELECT * FROM jobs WHERE job_fotographer_id = '$_SESSION['user_id']'");
 $statement->execute(array(
 ':id' => $id
   ));
- while ( $job = $statement->fetch(PDO::FETCH_OBJ) ) { 
- ?>
+ while ( $job = $statement->fetch(PDO::FETCH_OBJ) ) {
    <article>
           <header>
             <h3><?= $job->job_title; ?></h3>
@@ -22,8 +21,6 @@ $statement->execute(array(
           <footer>
             <a href="<?= "index.php" ?>" class="btn btn-primary"></a>
           </footer>
-        </article> 
-        <?php
-        }
+        </article> }
 
 ?>
