@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('/stov/includes/functions.php');
-require_once('/stov/includes/db-connect.php');
+require_once('../../functions.php');
+require_once('../../db-connect.php');
 
  /* $result = mysql_query("SELECT * FROM articles WHERE id = $id"); */
  $user_id = $_SESSION['user_id'];
