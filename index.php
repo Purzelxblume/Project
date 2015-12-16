@@ -39,9 +39,9 @@ if ( isset($_POST['username']) )
   
         
         if ($_SESSION['user_type'] == 'fotographer') {
-          header('Location: fotographer/index.php');
+          header('Location: /stov/fotographer/index.php');
         } elseif ($_SESSION['user_type'] == 'customer') {
-          header('Location: customer/index.php');
+          header('Location: /stov/customer/index.php');
         }
         exit;
       }
