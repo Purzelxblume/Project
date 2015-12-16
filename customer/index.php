@@ -8,7 +8,7 @@ require_once('includes/functions.php');
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>STOV | Startseite</title>
+    <title>STOV | Customer Area</title>
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
