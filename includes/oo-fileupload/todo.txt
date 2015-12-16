@@ -1,0 +1,12 @@
+# In welchen Ordner soll es geschoben werden?
+# Welche Filetypen / MIME Types sind erlaubt?
+# Wie groß darf das File max. sein?
+# Errorhandling
+# Filename muss unique gehalten werden
+# Existiert der Ordner in den ich uploaden möchte?
+#   - Wenn ja, habe ich die Rechte dazu?
+#   - Erzeuge den Ordner notfalls / bzw. setze die Rechte
+# Feedbackarray zurückgeben mit detaillierten Informationen
+
+# On top:
+# ECHTEN MIME Type prüfen bzw. WIRKLICH prüfen, ob es ein Bild ist
