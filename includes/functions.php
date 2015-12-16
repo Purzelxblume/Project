@@ -13,7 +13,7 @@ function getFeedback ($feedback, $feedbackType)
   return "<div class='alert alert-$feedbackType'>$feedback</div>";
 }
 
-function hasRights ($rights=10)
+function getRights ($rights=10)
 {
 
 if ( isset($_SESSION['rights'])) 
